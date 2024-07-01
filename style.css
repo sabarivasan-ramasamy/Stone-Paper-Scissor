@@ -1,0 +1,96 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    background: url('https://images7.alphacoders.com/114/1142103.png');
+    background-size: cover;
+    /* background: l
+    
+    inear-gradient(135deg, #f0f0f0 25%, #ffffff 100%); */
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #333;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+span {
+    color: purple;
+    font-weight: bold;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 15px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button#rock {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+button#paper {
+    background-color: #6bafff;
+    color: white;
+}
+
+button#scissors {
+    background-color: #6bff6b;
+    color: white;
+}
+
+#computer, #user, #result {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 24px;
+    }
+}
